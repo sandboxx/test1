@@ -1,0 +1,52 @@
+---
+layout: default
+title: COPPER - Download
+tabname: downloads
+displayGitHubRibbon: true
+---
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Try COPPER now!</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>The <strong>COPPER</strong> source code is on <strong>GitHub: <a href="https://github.com/copper-engine/copper-engine" target="_blank">https://github.com/copper-engine/copper-engine</a></strong></p>
+
+                <h3>Stable</h3>
+
+                <p>The current <strong>stable</strong> release is <strong>4.1.0</strong>.<br/>
+                    You can download it <strong><a href="https://github.com/copper-engine/copper-engine/releases/tag/4.1.0">here</a></strong>.<br/>
+                    See <a href="https://github.com/copper-engine/copper-engine/blob/4.1.0/WHATSNEW.txt">what's new</a>.</p>
+
+                <p>COPPER is on <a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.copper-engine%22">Maven Central</a>, too. You may use the following to include the COPPER core workflow engine in your <strong>Maven</strong> project:
+                {% highlight xml %}
+<dependency>
+    <groupId>org.copper-engine</groupId>
+    <artifactId>copper-coreengine</artifactId>
+    <version>4.1.0</version>
+</dependency>{% endhighlight %}
+                If you are using <strong>Gradle</strong>, simply add the following to your <code>dependencies</code> section:
+                {% highlight groovy %}compile 'org.copper-engine:copper-coreengine:4.1.0'{% endhighlight %}
+                If you are using COPPER with <strong>Spring</strong> you also need to include <code>copper-spring</code>:
+                {% highlight xml %}
+<dependency>
+    <groupId>org.copper-engine</groupId>
+    <artifactId>copper-spring</artifactId>
+    <version>4.1.0</version>
+</dependency> {% endhighlight %}
+                and likewise for Gradle:
+                {% highlight groovy %}compile 'org.copper-engine:copper-spring:4.1.0'{% endhighlight %}
+                </p>
+
+                <h3>Development</h3>
+
+                <p>Currently, we're working on the <strong>master</strong> branch on release <strong>4.2</strong>.<br/>
+                    See <a href="https://github.com/copper-engine/copper-engine/blob/master/WHATSNEW.txt">what's cooking</a> for the next release.</p>
+
+                <h3>Archive</h3>
+
+                <p>For older releases, go to <a href="https://github.com/copper-engine/copper-engine/releases">our list of releases</a>.</p>
+            </div>
+        </div>
+    </div>

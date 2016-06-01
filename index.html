@@ -1,52 +1,67 @@
 ---
-  layout: base
-  title: Home
+layout: default
+title: COPPER - a site about coding
+tabname: home
+displayGitHubRibbon: true
 ---
 
-<div id="banner">
-  <div class="inner-content">
-    <div class="copy">
-      <h1>Java8</h1>
-      <p class="intro">About coding</p>
-    </div>
-  </div>
-</div>
+    <img class="hidden-xs" src="/images/copper.png" style="position: absolute">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="jumbotron-content">
+                <h1>Workflow made easy</h1>
 
-<div id="content">
-  <div class="inner-content">
-    <div class="cols">
-      <div class="col">
-        <h3>Features</h3>
-        <ul class="bordered-list">
-          <li>Made for static blogging with Jekyll</li>
-          <li>Easy theming with SCSS. Change a few variables and you've got your look</li>
-          <li>Using the wonderful open source font <a href="http://sourceforge.net/projects/sourcesans.adobe/">Source Sans Pro</a></li>
-          <li>Modern CSS using subtle transitions</li>
-          <li>Lightweight code (the CSS file is 18kb)</li>
-          <li>Responsive design with fluid grid and video</li>
-          <li>Code highlighting and image alignment classes for better looking blog posts</li>
-          <li>Drop in a Disqus code and you have comments</li>
-          <li>Photo banner on homepage, ready to customize</li>
-          <li>Built-in RSS feed</li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>Initial setup</h3>
-        <p>Download the files from the Github repository and put them in a folder. Make sure Jekyll, Susy, Compass and Sass are installed through <a href="http://rubygems.org/">RubyGems</a>:</p>
-        {% highlight bash %}
-sudo gem install jekyll
-sudo gem install susy
-sudo gem install sass
-sudo gem install compass{% endhighlight %}
+                <p><strong>COPPER</strong> is an open-source, powerful, light-weight, and easily configurable
+                    <strong>workflow engine</strong>. The power of COPPER
+                    is that it uses <strong>Java</strong> as a description language for workflows.</p>
 
-        <h3>How to use</h3>
-        <p>Run two terminal windows, one to compile the site and one to compile the CSS. If you're just blogging you only need the jekyll command:</p>
-        {% highlight bash %}
-jekyll serve -w
-compass watch{% endhighlight %}
-        <h3>Theme license</h3>
-        <p>The Cactus Jekyll theme is licensed under the <a href="http://opensource.org/licenses/MIT">MIT</a> license i.e. do whatever you want with it. Keeping the backlink and spreading the word would be nice.</p>
-      </div>
+                <p><a class="btn btn-primary btn-lg" href="/about/" role="button">Learn more &raquo;</a></p>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Powerful</h2>
+
+                <p>COPPER is a <strong>high-performance workflow engine</strong> and comprises key features such as
+                    <ul>
+                        <li>automatic crash recovery</li>
+                        <li>dynamic resource allocation</li>
+                        <li>hot deployment</li>
+                        <li>versioning</li>
+                        <li>long running workflows (months or more)</li>
+                        <li>features to support high availability (having a Apache Cassandra or Oracle RAC database)</li>
+                    </ul>
+                </p>
+                <p>When designing COPPER, we put the main focus on performance and reliability.</p>
+
+                <p><a class="btn btn-default" href="/about/" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Java based</h2>
+
+                <p><strong>Use the language you know best!</strong></p>
+                <p>In contrast to many other Java-based workflow engines, it is not only written in <strong>100% pure Java</strong> but it also <em>uses</em> Java for workflow definitions.</p>
+
+                <p>Plus, you can dynamically modify workflows at runtime due to its automatic class reloading!</p>
+
+                <p>COPPER runs with Java 7 and Java 8.</p>
+
+                <p><a class="btn btn-default" href="/about/" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Open Source</h2>
+
+                <p>COPPER is released under Apache License 2.0</p>
+                <p>The complete source code, releases and useful documentation are available at GitHub.</p>
+
+                <p><a class="btn btn-default" href="/downloads/" role="button"><span class="glyphicon glyphicon-download"></span> Download &raquo;</a></p>
+
+                {% include blog-newsflash.html maxItems=3 %}
+
+                <p><script type="text/javascript" src="http://www.ohloh.net/p/623299/widgets/project_partner_badge.js"></script></p>
+            </div>
+        </div>
+    </div>
